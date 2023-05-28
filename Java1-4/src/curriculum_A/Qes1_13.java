@@ -150,7 +150,7 @@ public class Qes1_13 {
 		//	「初めまして山田太郎です」
 		System.out.println("初めまして" + name + "です\n");
 
-		//	「年齢は○○歳です」
+		//	「年齢は18歳です」
 		System.out.println("年齢は" + age + "歳です\n");
 
 		//	「身長は170.5cmです」
@@ -164,11 +164,16 @@ public class Qes1_13 {
 
 		//	7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		//	ただし計算は数値を直書きせず、全て変数を使ってすること
-		double bmi = weight / ((height / 100) * (height / 100));
-
+		
+		//	身長をmに変換
+		height = 1.705;
+		double bmi = weight / (height * height);
+		
+		//	整数表示に変換（".0"の表示をなくす）
 		//	小数点第1位を切り上げで表示
-		double decimalPointNumber = Math.ceil(bmi * 1) / 1;
-		//「BMIは22.0です」
+		int decimalPointNumber = (int) Math.ceil(bmi * 10) / 10;
+		
+		//「BMIは21です」
 		System.out.println("BMIは" + decimalPointNumber + "です\n");
 
 		//	8.6で宣言した変数に再代入し下記の通りコンソールに出力してください
