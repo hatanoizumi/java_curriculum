@@ -165,13 +165,12 @@ public class Qes1_13 {
 		//	7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		//	ただし計算は数値を直書きせず、全て変数を使ってすること
 		
-		//	身長をmに変換
-		height = 1.705;
-		double bmi = weight / (height * height);
+		//	bmiを求める
+		double bmi = weight / ((height/100) * (height/100));
 		
 		//	整数表示に変換（".0"の表示をなくす）
 		//	小数点第1位を切り上げで表示
-		int decimalPointNumber = (int) Math.ceil(bmi * 10) / 10;
+		double decimalPointNumber = Math.ceil(bmi * 10.0) / 10.0;
 		
 		//「BMIは21です」
 		System.out.println("BMIは" + decimalPointNumber + "です\n");
