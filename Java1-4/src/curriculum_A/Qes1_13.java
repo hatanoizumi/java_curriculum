@@ -278,7 +278,7 @@ public class Qes1_13 {
 
 		//	身長を表示(string -> double -> int) 
 		// double型に変換
-		double changeNum = Double.parseDouble(heightStr);
+		double changeNum = Double.parseDouble(heightStr); 
 		//int型に変換
 		int heightStrChange = (int) changeNum;
 		// 168 を出力
