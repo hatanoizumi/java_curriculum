@@ -252,20 +252,20 @@ public class Qes1_13 {
 		//身長
 		height = 168.5;
 		//体重
-		weight = 62.2f;
+		weight =  64.2;
 
 		//	文字列型に型変換
 		//	年齢24歳
 		String ageStr = String.valueOf(age);
 		//	身長 168.5cm
 		String heightStr = String.valueOf(height);
-		//	体重 62.2kg
+		//	体重 64.2kg
 		String weightStr = String.valueOf(weight);
 
 		//	空白で繋げた文字列を作成
 		String result = ageStr + " " + heightStr + " " + weightStr;
 
-		//	24 168.5 62.2 を出力
+		//	24 168.5 64.2 を出力
 		System.out.println(result);
 
 		//	12.11で変換した【年齢・身長】を整数型に変換して出力してください
